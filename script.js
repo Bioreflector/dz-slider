@@ -7,7 +7,6 @@ function Slider(slider){
     const prevButton = slider.querySelector('.prev')
     const nextButton = slider.querySelector('.next')
 
-
      function showNextSlide(){
         let nextSlide
         slide.forEach((item) =>{
@@ -16,6 +15,7 @@ function Slider(slider){
               nextSlide = item.nextElementSibling
             } 
         })
+        console.log(nextSlide)
         if(nextSlide === null){
             nextSlide = slide[0]
         }
