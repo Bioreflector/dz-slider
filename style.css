@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.slider {
+    max-width: 700px;
+    margin: 30px auto;
+    position: relative;
+    padding: 0 50px;
+}
+.prev{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.next{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.slider-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.slide {
+    display: none;
+    background-color: blue;
+    flex:  0 100%;
+}
+.slide-active{
+    display: block;
+}
